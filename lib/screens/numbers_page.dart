@@ -4,53 +4,53 @@ import '../models/number.dart';
 
 class NumbersPage extends StatelessWidget {
   const NumbersPage({Key? key}) : super(key: key);
-  final List<Number> numbers = const [
-    Number(
+  final List<ItemModels> numbers = const [
+    ItemModels(
         sound: 'sounds/numbers/number_one_sound.mp3',
         image: 'assets/images/numbers/number_one.png',
         jpName: 'ichi',
         enName: 'one'),
-    Number(
+    ItemModels(
         sound: 'sounds/numbers/number_two_sound.mp3',
         image: 'assets/images/numbers/number_two.png',
         jpName: 'Ni',
         enName: 'two'),
-    Number(
+    ItemModels(
         sound: 'sounds/numbers/number_three_sound.mp3',
         image: 'assets/images/numbers/number_three.png',
         jpName: 'San',
         enName: 'three'),
-    Number(
+    ItemModels(
         sound: 'sounds/numbers/number_four_sound.mp3',
         image: 'assets/images/numbers/number_four.png',
         jpName: 'Shi',
         enName: 'four'),
-    Number(
+    ItemModels(
         sound: 'sounds/numbers/number_five_sound.mp3',
         image: 'assets/images/numbers/number_five.png',
         jpName: 'Go',
         enName: 'five'),
-    Number(
+    ItemModels(
         sound: 'sounds/numbers/number_six_sound.mp3',
         image: 'assets/images/numbers/number_six.png',
         jpName: 'Roku',
         enName: 'six'),
-    Number(
+    ItemModels(
         sound: 'sounds/numbers/number_seven_sound.mp3',
         image: 'assets/images/numbers/number_seven.png',
         jpName: 'Sebun',
         enName: 'seven'),
-    Number(
+    ItemModels(
         sound: 'sounds/numbers/number_eight_sound.mp3',
         image: 'assets/images/numbers/number_eight.png',
         jpName: 'hichi',
         enName: 'eight'),
-    Number(
+    ItemModels(
         sound: 'sounds/numbers/number_nine_sound.mp3',
         image: 'assets/images/numbers/number_nine.png',
         jpName: 'Kyu',
         enName: 'nine'),
-    Number(
+    ItemModels(
         sound: 'sounds/numbers/number_ten_sound.mp3',
         image: 'assets/images/numbers/number_ten.png',
         jpName: 'Ju',
@@ -67,7 +67,7 @@ class NumbersPage extends StatelessWidget {
       body: ListView.builder(
        itemCount: numbers.length,
        itemBuilder: (context, index){
-         return Item(number: numbers[index],);
+         return Item(item_models: numbers[index],color: Color(0xffEF9235), );
        }),
     );
   }
